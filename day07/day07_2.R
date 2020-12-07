@@ -26,10 +26,6 @@ for (rule in input) { # all of these can be vectorized but nah ill just loop
 }
 rm(color, inBag, inBags, num, outBag, rule, numberedRules)
 
-bags <- "shiny gold"
-bagCount <- 1
-globalCount <- 0
-
 countBags <- function (bags, bagCount, globalCount = 0) {
   if (length(bags) == 0){
     return(globalCount)
